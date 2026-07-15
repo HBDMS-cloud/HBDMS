@@ -5,5 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js"
-  }
+  },
+  "author": "HBDMS",
+  "license": "MIT"
 }
