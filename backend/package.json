@@ -1,0 +1,9 @@
+{
+  "name": "hbdms-backend",
+  "version": "1.0.0",
+  "description": "HYPA Brotherhood Digital Management System Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  }
+}
