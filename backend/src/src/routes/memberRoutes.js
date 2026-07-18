@@ -1,10 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const memberController = require("../controllers/memberController");
 
-router.get("/", (req, res) => {
-  res.json({
-    message: "HYPA Members Route Working Successfully!"
-  });
-});
+router.get("/", memberController.getAllMembers);
 
 module.exports = router;
