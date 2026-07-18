@@ -1,9 +1,19 @@
-const getAllMembers = (req, res) => {
-  res.json({
-    success: true,
-    message: "All HYPA members fetched successfully.",
-    data: []
-  });
+const memberService = require("../services/memberService");
+
+const getAllMembers = async (req, res) => {
+  try {
+    const members = await memberService.getAllMembers();
+
+    res.json({
+      success: true,
+      data: members,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
 };
 
 module.exports = {
