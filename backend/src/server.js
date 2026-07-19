@@ -1,7 +1,7 @@
-const app = require("./app");
+const app = require("../app");
 
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`HBDMS Backend running on port ${PORT}`);
+  console.log(`HBDMS Server running on port ${PORT}`);
 });
